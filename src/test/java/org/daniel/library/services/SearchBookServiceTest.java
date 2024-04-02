@@ -2,6 +2,7 @@ package org.daniel.library.services;
 
 import lombok.SneakyThrows;
 import org.daniel.library.dtos.response.BookSearchResponse;
+import org.daniel.library.dtos.response.Result;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +16,7 @@ public class SearchBookServiceTest {
     @Test
     @SneakyThrows
     public void searchBookTest(){
-        BookSearchResponse response = searchBookService.searchBook("A%20Room%20with%20a%20View", "Chinua Achebe");
-        System.out.println(response);
+        Result result = searchBookService.searchBook("Alice", "Chinua Achebe");
+        System.out.println(result);
     }
 }
