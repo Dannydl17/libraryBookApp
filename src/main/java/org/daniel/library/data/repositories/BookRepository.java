@@ -1,6 +1,6 @@
-package libraryBookApp.data.repositories;
+package org.daniel.library.data.repositories;
 
-import libraryBookApp.data.models.Book;
+import org.daniel.library.data.models.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BookRepository extends JpaRepository<Book, Long> {
